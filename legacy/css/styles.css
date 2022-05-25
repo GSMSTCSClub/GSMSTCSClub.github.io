@@ -1,0 +1,120 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --logo-color: #837c8c;
+    --bg-color: #201A27;
+    --primary-text-color: #B4A5C8;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: 'Inter', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.dark-top {
+    width: 100%;
+    height: 80vh;    
+}
+
+.nav {
+    color: #B4A5C8;
+    font-weight: 600;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.nav ul li {
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary-text-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100%;
+    color: var(--primary-text-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-heading {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.sub-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 40ch;
+}
+
+.join-button {
+    background: var(--primary-text-color);
+    color: var(--bg-color);
+    padding: 1em 2em;
+    border-radius: 10px;
+    transition: all 200ms ease;
+
+    text-decoration: none;
+}
+
+.join-button:hover, .join-button:focus {
+    outline: var(--primary-text-color) 3px solid;
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+}
+
+.content {
+    height: 300px;
+    background: red;
+}
