@@ -1,139 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- My styles -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>GSMST CS Club</title>
-  </head>
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo-transparent.png">
 
-  <body class="">
-    <div class="main-container full-height">
-      <header class="header">
-        <a href="/" class="logo">
-          <img src="images/logo-transparent.png" width="100px" data-aos="fade-right" />
-          <div class="logo-text" data-aos="fade-right" data-aos-delay="200">GSMST CS Club</div>
-        </a>
-        <nav>
-          <ul>
-            <li data-aos="fade-left" data-aos-delay="300"><a href="/about" class="nav-link line-hover">About</a></li>
-            <li data-aos="fade-left" data-aos-delay="400"><a href="/areas" class="nav-link line-hover">Areas</a></li>
-            <li data-aos="fade-left" data-aos-delay="500"><a href="/contact" class="nav-link line-hover">Contact</a></li>
-            <li data-aos="fade-left" data-aos-delay="600">
-              <a href="/join" class="nav-link">
-                <button class="nav-join-button">Join</button>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      style="
-        margin: auto;
-        background: rgb(0, 0, 0);
-        display: block;
-        z-index: -1;
-        position: absolute;
-        left: 0;
-        top: 18vh;
-        shape-rendering: auto;
-      "
-      width="1920"
-      height="685"
-      preserveAspectRatio="xMidYMid"
-      viewBox="0 0 1920 675"
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
-      <g
-        transform="translate(960,337.5) scale(1.2,1.2) translate(-960,-337.5)"
-      >
-        <linearGradient id="lg-0.981813491561945" x1="0" x2="1" y1="0" y2="0">
-          <stop stop-color="#878291" offset="0"></stop>
-          <stop stop-color="#089ccc" offset="1"></stop>
-        </linearGradient>
-        <path d="" fill="url(#lg-0.981813491561945)" opacity="0.4">
-          <animate
-            attributeName="d"
-            dur="10s"
-            repeatCount="indefinite"
-            keyTimes="0;0.333;0.667;1"
-            calcmod="spline"
-            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-            begin="0s"
-            values="M0 0M 0 599.340357854282Q 192 582.189285051029 384 572.5670109644185T 768 597.8525884766892T 1152 506.90678193374373T 1536 513.9413010490326T 1920 493.1045005808568L 1920 167.73659347689883Q 1728 196.98978991642372 1536 187.5200867759145T 1152 152.72119220237585T 768 83.13882072417144T 384 128.07563598095015T 0 54.5204126698911Z;M0 0M 0 593.4582473982507Q 192 573.4456389681695 384 565.130456877258T 768 540.2634405220904T 1152 511.5004936995612T 1536 491.9855881788622T 1920 498.64114892225757L 1920 225.20553929470367Q 1728 135.44984958887923 1536 134.75349890246878T 1152 129.49817451345683T 768 154.7967881109671T 384 77.62438603220019T 0 33.950424779401374Z;M0 0M 0 597.8321388035233Q 192 551.2053105534832 384 544.5041206239268T 768 544.4627190894399T 1152 552.1207657074734T 1536 540.2915480521489T 1920 487.8210046128755L 1920 188.03268081876277Q 1728 201.78582274373824 1536 199.22824598300352T 1152 110.81807661088835T 768 116.93520381161679T 384 115.3927488238916T 0 35.56597484756375Z;M0 0M 0 599.340357854282Q 192 582.189285051029 384 572.5670109644185T 768 597.8525884766892T 1152 506.90678193374373T 1536 513.9413010490326T 1920 493.1045005808568L 1920 167.73659347689883Q 1728 196.98978991642372 1536 187.5200867759145T 1152 152.72119220237585T 768 83.13882072417144T 384 128.07563598095015T 0 54.5204126698911Z"
-          ></animate>
-        </path>
-        <path d="" fill="url(#lg-0.981813491561945)" opacity="0.4">
-          <animate
-            attributeName="d"
-            dur="10s"
-            repeatCount="indefinite"
-            keyTimes="0;0.333;0.667;1"
-            calcmod="spline"
-            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-            begin="-2.5s"
-            values="M0 0M 0 597.2841095886492Q 192 562.6064633160523 384 559.1532938746653T 768 570.4470300091675T 1152 561.5003702824536T 1536 523.2566626401854T 1920 487.27626220528435L 1920 206.54224298648398Q 1728 197.40010271866007 1536 196.74270824202907T 1152 144.18295600499903T 768 83.88609076284729T 384 59.00076571248783T 0 86.37990676139896Z;M0 0M 0 635.2346605716118Q 192 625.4245478259701 384 619.7693703531128T 768 553.4297875869547T 1152 545.6905167413563T 1536 510.8618833901641T 1920 522.3267496456551L 1920 153.89382262754205Q 1728 192.1648255432092 1536 187.77093870337595T 1152 138.30951760180739T 768 112.15577250842878T 384 103.9310559267496T 0 62.94359525902371Z;M0 0M 0 585.4121281913195Q 192 607.9769183672621 384 598.9027419855615T 768 581.9503958398199T 1152 506.2185079907627T 1536 532.5771069964184T 1920 478.52944210763894L 1920 179.5475887553708Q 1728 146.31522739209916 1536 142.63295155827123T 1152 104.23911067915618T 768 81.42915217318688T 384 58.38712695578391T 0 92.02291943628347Z;M0 0M 0 597.2841095886492Q 192 562.6064633160523 384 559.1532938746653T 768 570.4470300091675T 1152 561.5003702824536T 1536 523.2566626401854T 1920 487.27626220528435L 1920 206.54224298648398Q 1728 197.40010271866007 1536 196.74270824202907T 1152 144.18295600499903T 768 83.88609076284729T 384 59.00076571248783T 0 86.37990676139896Z"
-          ></animate>
-        </path>
-        <path d="" fill="url(#lg-0.981813491561945)" opacity="0.4">
-          <animate
-            attributeName="d"
-            dur="10s"
-            repeatCount="indefinite"
-            keyTimes="0;0.333;0.667;1"
-            calcmod="spline"
-            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-            begin="-5s"
-            values="M0 0M 0 617.7243724018924Q 192 622.2510183059292 384 618.143653881537T 768 542.1460997890001T 1152 514.3949467747614T 1536 487.84813023633666T 1920 471.8844585458536L 1920 190.48239243472335Q 1728 156.31343694338935 1536 150.02408537332295T 1152 162.68028745761194T 768 111.62751525623548T 384 126.13341717245586T 0 54.95443748969649Z;M0 0M 0 642.3851313868713Q 192 617.6806117011969 384 615.4650885200766T 768 583.8484616755214T 1152 538.3705871661163T 1536 533.4821695988347T 1920 488.23764095022494L 1920 169.65909696976968Q 1728 152.25211562241756 1536 144.7820980503579T 1152 120.76863032871684T 768 150.41834162208926T 384 67.33070310891014T 0 68.42888134823914Z;M0 0M 0 598.4659374290493Q 192 599.2076235771167 384 595.3292303465399T 768 563.7976756978458T 1152 548.6126912831459T 1536 529.0979623831248T 1920 477.4875534171945L 1920 211.30296319192365Q 1728 171.06585810535893 1536 166.53839828062817T 1152 146.17262393608047T 768 127.3761759917156T 384 98.29673127990159T 0 36.47479195771692Z;M0 0M 0 617.7243724018924Q 192 622.2510183059292 384 618.143653881537T 768 542.1460997890001T 1152 514.3949467747614T 1536 487.84813023633666T 1920 471.8844585458536L 1920 190.48239243472335Q 1728 156.31343694338935 1536 150.02408537332295T 1152 162.68028745761194T 768 111.62751525623548T 384 126.13341717245586T 0 54.95443748969649Z"
-          ></animate>
-        </path>
-        <path d="" fill="url(#lg-0.981813491561945)" opacity="0.4">
-          <animate
-            attributeName="d"
-            dur="10s"
-            repeatCount="indefinite"
-            keyTimes="0;0.333;0.667;1"
-            calcmod="spline"
-            keySplines="0.2 0 0.2 1;0.2 0 0.2 1;0.2 0 0.2 1"
-            begin="-7.5s"
-            values="M0 0M 0 591.3700722474291Q 192 575.2900592910551 384 569.6291775225698T 768 523.2893377873927T 1152 561.3030250188654T 1536 539.3754523431322T 1920 522.2499011180058L 1920 213.91659872838187Q 1728 138.41049449555993 1536 130.7746454937053T 1152 103.41588811767063T 768 149.1619145786358T 384 125.78636559333032T 0 99.52298317792378Z;M0 0M 0 614.7216350859374Q 192 570.5909225303232 384 564.2610030817866T 768 598.0570319498132T 1152 504.2434082784488T 1536 544.1539373685292T 1920 466.05437064472585L 1920 162.1051191614679Q 1728 186.31484207005795 1536 179.4752691652573T 1152 114.06819663522528T 768 78.30664076746388T 384 89.79660021910365T 0 31.558643292012448Z;M0 0M 0 642.8853647244757Q 192 579.5357023138426 384 578.4438577079084T 768 534.7287500191369T 1152 556.1538103629252T 1536 532.7652859030247T 1920 490.7584327831819L 1920 196.01530682694414Q 1728 184.7314397325861 1536 178.22487546976882T 1152 160.30433912671202T 768 78.96649274946779T 384 53.47568150292798T 0 94.72513337750911Z;M0 0M 0 591.3700722474291Q 192 575.2900592910551 384 569.6291775225698T 768 523.2893377873927T 1152 561.3030250188654T 1536 539.3754523431322T 1920 522.2499011180058L 1920 213.91659872838187Q 1728 138.41049449555993 1536 130.7746454937053T 1152 103.41588811767063T 768 149.1619145786358T 384 125.78636559333032T 0 99.52298317792378Z"
-          ></animate>
-        </path>
-      </g>
-    </svg>
+  <!-- AOS CSS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Index styles -->
+  <link rel="stylesheet" href="css/index.css">
+
+  <title>GSMST CS Club</title>
+
+</head>
+
+<body id="vanta-target">
+  <div class="main-container full-height">
+    <header class="header">
+      <a href="/" class="logo">
+        <img class="logo-img" src="images/logo-transparent.png" data-aos="fade-right" />
+        <div class="logo-text" data-aos="fade-right" data-aos-delay="200">GSMST CS Club</div>
+      </a>
+      <nav>
+        <ul>
+          <li data-aos="fade-left" data-aos-delay="300"><a href="/about" class="nav-link line-hover">About</a></li>
+          <li data-aos="fade-left" data-aos-delay="400"><a href="/areas" class="nav-link line-hover">Areas</a></li>
+          <li data-aos="fade-left" data-aos-delay="500"><a href="/contact" class="nav-link line-hover">Contact</a></li>
+          <li data-aos="fade-left" data-aos-delay="600">
+            <a href="/join" class="nav-link">
+              <button class="nav-join-button">Join</button>
+            </a>
+          </li>
+        </ul>
+        <div class="toggle-btn" data-aos="fade-left" data-aos-delay="400">
+          <div class="line-one"></div>
+          <div class="line-two"></div>
+          <div class="line-three"></div>
+        </div>
+      </nav>
+    </header>
     <section class="hero">
       <div class="left">
         <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="600">GSMST<br \>Computer Science Club</h1>
         <p class="hero-description" data-aos="fade-down" data-aos-delay="800">
-          Welcome to the website of the CS Club of 
-          the #1 High School in Georgia. Created and 
+          Welcome to the website of the CS Club of
+          the #1 High School in Georgia. Created and
           maintained by GSMST students.</p>
-        <a href="/join" class="hero-join-link" data-aos="fade-up" data-aos-delay="1000">
-          <button class="hero-join-button">Join Now</button>
-        </a>
+        <div class="join-button-container">
+          <a href="/join" class="hero-join-link" data-aos="fade-up" data-aos-delay="1000">
+            <button class="hero-join-button">Join Now</button>
+          </a>
+        </div>
       </div>
       <div class="right" data-aos="fade-left" data-aos-delay="1200">
-        <img src="images/panel.png" width="400px" class="panel-img" />
+        <img src="images/panel.png" width="400px" class="panel-img" id="panel-img" />
       </div>
     </section>
-    </div>
+  </div>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-        duration: 1000,
-      });
-    </script>
-  </body>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <!-- Vanta JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+
+  <!-- Vanilla Tilt JS -->
+  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+
+  <!-- My JS -->
+  <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
 </html>
