@@ -14,12 +14,16 @@
   font-size: 0.75rem;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-color);
   font-family: var(--ff);
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 
 button {
@@ -150,9 +154,6 @@ nav > ul > li {
 }
 
 @media (max-width: 1150px) { 
-  body {
-    overflow-x: hidden;
-  }
   nav > ul {
     position: absolute;
     right: 0;
