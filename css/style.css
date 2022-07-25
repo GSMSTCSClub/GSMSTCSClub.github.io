@@ -74,6 +74,10 @@ nav > ul > li {
   font-weight: 600;
 }
 
+.github-icon {
+  filter: invert(61%) sepia(67%) saturate(6168%) hue-rotate(166deg) brightness(97%) contrast(94%);
+}
+
 .line-hover::after {
   background: none repeat scroll 0 0 transparent;
   bottom: -8px;
