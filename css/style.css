@@ -15,7 +15,7 @@
 }
 
 html {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   font-family: var(--ff);
-  overflow: hidden !important;
+  min-height: 100vh;
 }
 
 button {
@@ -75,6 +75,10 @@ nav > ul > li {
 }
 
 .github-icon {
+  filter: invert(61%) sepia(67%) saturate(6168%) hue-rotate(166deg) brightness(97%) contrast(94%);
+}
+
+.discord-icon {
   filter: invert(61%) sepia(67%) saturate(6168%) hue-rotate(166deg) brightness(97%) contrast(94%);
 }
 
