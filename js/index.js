@@ -8,12 +8,6 @@ toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("nav-toggled");
 });
 
-// Initialize AOS
-AOS.init({
-  once: true,
-  duration: 1000,
-});
-
 // Initialize vanta animated background
 VANTA.NET({
   el: "#vanta-target",
