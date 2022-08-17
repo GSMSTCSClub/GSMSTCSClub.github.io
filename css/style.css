@@ -149,6 +149,10 @@ nav > ul > li {
   transform: translateX(0%);
 }
 
+.nav-active > li {
+  opacity: 1;
+}
+
 .nav-toggled .line-one {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
