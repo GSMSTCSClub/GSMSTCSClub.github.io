@@ -1,0 +1,10 @@
+.placeholder-container {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.placeholder {
+  font-size: 2rem;
+  color: white;
+}
