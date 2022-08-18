@@ -173,6 +173,7 @@ nav > ul > li {
     top: 15vh;
     background: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
