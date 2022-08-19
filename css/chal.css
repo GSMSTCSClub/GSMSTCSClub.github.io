@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  overflow-wrap: anywhere;
 }
 
 .placeholder {
   font-size: 2rem;
   color: white;
+  overflow-wrap: anywhere;
 }
 
 .hidden {
