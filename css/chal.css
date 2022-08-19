@@ -1,7 +1,7 @@
 .placeholder-container {
-  height: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 .placeholder {
