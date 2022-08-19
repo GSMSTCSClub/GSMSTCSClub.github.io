@@ -10,10 +10,10 @@
 
   <!-- Global styles -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- About styles -->
-  <link rel="stylesheet" href="css/about.css" />
+  <!-- Areas styles -->
+  <link rel="stylesheet" href="css/chal.css" />
 
-  <title>About CS Club</title>
+  <title>INSIDE SCOOP CHALLENGE!!!!!!!!</title>
 </head>
 <body>
   <div class="main-container full-height">
@@ -51,12 +51,24 @@
       </nav>
     </header>
     <main class="placeholder-container">
-      <h1 class="placeholder">This page is a work in progress</h1>
-      <h1 class="placeholder">Join CS Club to contribute to this page!</h1>
+        <div class="placeholder switch-set">
+            <span>easy</span>
+            <label class="switch">
+                <input type="checkbox" id="chal-difficulty" checked>
+                <span class="slider"></span>
+            </label>
+            <span>hard</span>
+        </div>
+        <h1 class="placeholder">What's <span id="chal-q"></span>?</h1>
+        <h1 class="hidden placeholder" id="chal-status">Wrong!</h1>
+        <form>
+            <input id="chal-a">
+        </form>
     </main>
   </div>
 
   <!-- My JS -->
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/chal.js"></script>
 </body>
 </html>
