@@ -12,6 +12,7 @@
   --bg-color: #23153c;
   --ff: "Inter";
   font-size: 0.75rem;
+  color-scheme: dark;
 }
 
 html {
@@ -24,7 +25,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--ff);
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 button {
