@@ -1,10 +1,10 @@
 // Handle mobile navbar state
 const toggleBtn = document.querySelector(".toggle-btn");
-const nav = document.querySelector("nav > ul");
+const navList = document.querySelector("nav > ul");
 const links = document.querySelectorAll("nav > ul > li");
 
 toggleBtn.addEventListener("click", () => {
-  nav.classList.toggle("nav-active");
+  navList.classList.toggle("nav-active");
   toggleBtn.classList.toggle("nav-toggled");
 });
 
