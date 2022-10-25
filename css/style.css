@@ -24,6 +24,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--ff);
   min-height: 100vh;
+  overflow: hidden;
 }
 
 button {
