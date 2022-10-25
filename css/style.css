@@ -15,7 +15,7 @@
 }
 
 html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
   background-color: var(--bg-color);
   font-family: var(--ff);
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 button {
