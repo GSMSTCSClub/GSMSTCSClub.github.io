@@ -28,6 +28,21 @@ body {
   overflow-x: hidden;
 }
 
+/* Vanta (animated background) */
+canvas {
+  position: fixed !important;
+}
+
+#vanta-target {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
 button {
   border: none;
 }
