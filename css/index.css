@@ -15,9 +15,11 @@
   0% {
     margin-top: 0;
   }
+
   50% {
     margin-top: -60px;
   }
+
   100% {
     margin-top: 0px;
   }
@@ -69,7 +71,7 @@
   width: 12rem;
 }
 
-@media (max-width: 1150px) { 
+@media (max-width: 1150px) {
   .hero {
     flex-direction: column;
     justify-content: center;
@@ -86,7 +88,7 @@
   }
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 640px) {
   .hero {
     text-align: center;
     align-items: stretch;
@@ -111,7 +113,7 @@
   }
 }
 
-@media (max-width: 290px) { 
+@media (max-width: 290px) {
   .hero-title {
     font-size: 2rem;
   }

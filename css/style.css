@@ -10,6 +10,8 @@
   --primary-text-color: white;
   --accent-color: #089ccc;
   --bg-color: #23153c;
+  --box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.1);
+  --bezier: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
   --ff: "Inter";
   font-size: 0.75rem;
   color-scheme: dark;
@@ -42,106 +44,184 @@ canvas {
   z-index: -1;
 }
 
-
-button {
-  border: none;
-}
-
+/* Main */
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
 }
 
-.logo {
+/* Header and Navigation */
+header {
+  backdrop-filter: blur(1rem);
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
   display: flex;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   color: var(--primary-text-color);
   text-decoration: none;
 }
 
-.logo-img {
-  max-width: 100px;
-}
-
-.logo-text {
+header .logo span {
   margin-left: 1rem;
   font-size: 2.15rem;
   font-weight: 600;
-}
-
-nav > ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  align-items: center;
-  gap: 4vw;
-}
-
-nav > ul > li {
   position: relative;
+  left: 100%;
+  animation: moveRight 1000ms ease-in-out forwards, fadeIn 1000ms ease-in-out forwards;
+  animation-delay: 100ms;
 }
 
-.nav-link {
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 600;
+header .logo img {
+  width: 5rem;
+  height: 5rem;
 }
 
-.github-icon {
-  filter: invert(61%) sepia(67%) saturate(6168%) hue-rotate(166deg) brightness(97%) contrast(94%);
+/* move all those buttons from left to right */
+nav a:nth-child(1) {
+  position: relative;
+  right: 100%;
+  opacity: 0;
+  animation: moveLeft 1000ms ease-in-out forwards, fadeIn 1000ms ease-in-out forwards;
 }
 
-.discord-icon {
-  filter: invert(61%) sepia(67%) saturate(6168%) hue-rotate(166deg) brightness(97%) contrast(94%);
+nav a:nth-child(2) {
+  position: relative;
+  right: 100%;
+  opacity: 0;
+  animation: moveLeft 1000ms ease-in-out forwards, fadeIn 1000ms ease-in-out forwards;
+  animation-delay: 100ms;
 }
 
-.line-hover::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: -8px;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: var(--accent-color);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+nav a:nth-child(3) {
+  position: relative;
+  right: 100%;
+  opacity: 0;
+  animation: moveLeft 1000ms ease-in-out forwards, fadeIn 1000ms ease-in-out forwards;
+  animation-delay: 150ms;
 }
 
-.line-hover:hover::after,
-.line-hover:focus::after {
-  width: 100%;
-  left: 0;
+nav a:nth-child(4) {
+  position: relative;
+  right: 100%;
+  opacity: 0;
+  animation: moveLeft 1000ms ease-in-out forwards, fadeIn 1000ms ease-in-out forwards;
+  animation-delay: 200ms;
 }
 
-.header {
+nav a:nth-child(5) {
+  position: relative;
+  right: 100%;
+  opacity: 0;
+  animation: moveLeft 1000ms ease-in-out forwards, fadeIn 1000ms ease-in-out forwards;
+  animation-delay: 250ms;
+}
+
+nav a:nth-child(6) {
+  position: relative;
+  right: 100%;
+  opacity: 0;
+  animation: moveLeft 1000ms ease-in-out forwards, fadeIn 1000ms ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+
+@keyframes moveLeft {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  gap: 2rem;
 }
 
-.nav-join-button {
-  background-color: var(--accent-color);
+nav a i {
+  color: var(--primary-text-color);
+  padding: 0.75rem;
+
+  text-decoration: none;
   font-size: 1.6rem;
-  padding: 0.9rem 2.2rem;
+  font-weight: 600;
+
+  text-align: center;
+  flex: 1 1 4rem;
+
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+nav button {
+  background-color: var(--accent-color);
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
   border-radius: 1.875rem;
   color: var(--primary-text-color);
   font-family: var(--ff);
   font-weight: 600;
-  transition: opacity 0.2s ease;
 }
 
-.nav-join-button:hover,
-.nav-join-button:focus {
+nav>a:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+
+nav>a:hover:before {
+  width: 100%;
+}
+
+nav button:hover,
+nav button:focus {
   opacity: 0.8;
   cursor: pointer;
 }
 
+#menu-bars {
+  display: none;
+}
 
 .full-height {
   display: flex;
@@ -149,41 +229,8 @@ nav > ul > li {
   min-height: 100vh;
 }
 
-/* Mobile Navigation Toggle Button */
-.toggle-btn div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-.toggle-btn {
-  display: none;
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-.nav-active > li {
-  opacity: 1;
-}
-
-.nav-toggled .line-one {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.nav-toggled .line-two {
-  opacity: 0;
-}
-
-.nav-toggled .line-three{
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-@media (max-width: 1150px) { 
-  nav > ul {
+@media (max-width: 1150px) {
+  nav>ul {
     position: absolute;
     right: 0;
     height: 85vh;
@@ -201,25 +248,18 @@ nav > ul > li {
     z-index: 1;
   }
 
-  nav > ul > li {
-    opacity: 0;
-  }
-
-  .nav-link {
-    font-size: 2rem;
-  }
-
-  .nav-join-button {
+  nav a:nth-child(-n+5) {
     display: none;
   }
 
-  .toggle-btn {
+  #menu-bars {
     display: block;
     cursor: pointer;
+    color: var(--primary-text-color);
   }
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 640px) {
   .main-container {
     padding: 0 20px;
   }
@@ -227,5 +267,4 @@ nav > ul > li {
   .logo-text {
     display: none;
   }
-
 }

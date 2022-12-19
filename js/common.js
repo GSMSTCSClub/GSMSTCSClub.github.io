@@ -1,5 +1,11 @@
+// Initialize AOS
+AOS.init({
+  once: true,
+  duration: 1000,
+});
+
 // Handle mobile navbar state
-const toggleBtn = document.querySelector(".toggle-btn");
+const toggleBtn = document.querySelector("#menu-bars");
 const navList = document.querySelector("nav > ul");
 const links = document.querySelectorAll("nav > ul > li");
 

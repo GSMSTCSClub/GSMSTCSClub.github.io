@@ -6,56 +6,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicon -->
   <link rel="icon" href="images/logo-transparent.png">
 
-  <!-- AOS CSS-->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS CSS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script> <!-- AOS JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> <!-- Swiper CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script> <!-- Swiper JS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" /> <!-- FA -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js" defer></script> <!-- Three JS -->
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js" defer></script> <!-- Vanta JS -->
+  <script type="text/javascript" src="js/vanilla-tilt.js" defer></script> <!-- Vanilla Tilt JS -->
 
-  <!-- Global styles -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Index styles -->
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/style.css" /> <!-- Common CSS -->
+  <link rel="stylesheet" href="css/index.css"> <!-- Index CSS -->
 
+  <script type="text/javascript" src="js/common.js" defer></script> <!-- Common JS -->
   <title>GSMST CS Club</title>
-
 </head>
 
 <body>
   <div class="full-height main-container">
     <header class="header">
       <a href="/" class="logo">
-        <img class="logo-img" src="images/logo-transparent.png" data-aos="fade-right" />
-        <div class="logo-text" data-aos="fade-right" data-aos-delay="200">GSMST CS Club</div>
+        <img src="images/logo-transparent.png" data-aos="fade-right" />
+        <span>GSMST CS Club</span>
       </a>
       <nav>
-        <ul>
-          <li data-aos="fade-left" data-aos-delay="300"><a href="about.html" class="nav-link line-hover">About</a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="400"><a href="areas.html" class="nav-link line-hover">Areas</a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="300">
-            <a href="https://github.com/GSMSTCSClub" target="_blank" class="nav-link line-hover">
-              <img src="images/github.svg" class="github-icon" />
-            </a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="300">
-            <a href="https://discord.gg/FxNRxWCMta" target="_blank" class="nav-link line-hover">
-              <img src="images/discord.svg" class="github-icon" />
-            </a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="600">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8Ss8ndyiiR9pUxNZ08iiPsRepaQ8Q1KaucPGGoyjdGlxVUQ/viewform?usp=sf_link"
-              target="_blank" class="nav-link">
-              <button class="nav-join-button">Join</button>
-            </a>
-          </li>
-        </ul>
-        <div class="toggle-btn" data-aos="fade-left" data-aos-delay="400">
-          <div class="line-one"></div>
-          <div class="line-two"></div>
-          <div class="line-three"></div>
-        </div>
+        <a href="about.html" title="About US"><i class="fas fa-info-circle"></i></a>
+        <a href="areas.html" title="Areas"><i class="fas fa-project-diagram"></i></a>
+        <a href="https://github.com/GSMSTCSClub" target="_blank" title="Our Github page"><i
+            class="fab fa-github"></i></a>
+        <a href="https://discord.gg/FxNRxWCMta" target="_blank" title="Our discord"><i class="fab fa-discord"></i></a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf8Ss8ndyiiR9pUxNZ08iiPsRepaQ8Q1KaucPGGoyjdGlxVUQ/viewform"
+          target="_blank" title="Join Us">
+          <button>Join</button>
+        </a>
+        <a href="#" id="menu-bars"><i class="fas fa-bars"></i></a>
       </nav>
     </header>
     <section class="hero">
@@ -81,24 +67,6 @@
     </section>
   </div>
   <div id="vanta-target"></div>
-
-  <!-- Test scrolling -->
-  <!-- <div style="height: 1000px; font-size: 50px;">hello</div> -->
-
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-  <!-- Vanta JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-
-  <!-- Vanilla Tilt JS -->
-  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-
-  <!-- My JS -->
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/initAOS.js"></script>
-
 </body>
 
 </html>
