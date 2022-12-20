@@ -51,9 +51,7 @@
 
 .hero-join-button {
   text-decoration: none;
-  background-color: var(--accent-color);
 
-  color: var(--primary-text-color);
   font-size: 1.6rem;
   font-family: var(--ff);
   font-weight: 600;
@@ -62,14 +60,6 @@
   border-radius: 1.875rem;
   flex-grow: 0;
   width: 12rem;
-
-  text-align: center;
-  transition: opacity 0.2s ease;
-}
-
-.hero-join-button:hover,
-.hero-join-button:focus {
-  opacity: 0.7;
 }
 
 .hero-join-link {

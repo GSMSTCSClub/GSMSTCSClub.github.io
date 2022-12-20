@@ -11,6 +11,7 @@
   --primary-text-color: white;
   --secondary-text-color: #b3b3b3;
   --accent-color: #089ccc;
+  --accent-color-tint: #3bcfff;
   --secondary-color: #02E3E0;
   --tertiary-color: #0270E3;
   --bg-color: #23153c;
@@ -213,15 +214,28 @@ nav .support-text {
   display: none;
 }
 
-nav button {
+.blue-button, nav button {
   background-color: var(--accent-color);
-  font-size: 1.25rem;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 1.875rem;
   color: var(--primary-text-color);
+  border: none;
+
   font-family: var(--ff);
+  text-align: center;
+  font-size: 1.25rem;
   font-weight: 600;
+  
+  padding: 0.75rem 1.5rem;
+  border-radius: 1.875rem;
+
+  transition: background-color 0.2s ease;
+}
+
+.blue-button:hover,
+.blue-button:focus, 
+nav button:hover,
+nav button:focus {
+  cursor: pointer;
+  background-color: var(--accent-color-tint);
 }
 
 nav>a:before {
@@ -239,12 +253,6 @@ nav>a:before {
 
 nav>a:hover:before {
   width: 100%;
-}
-
-nav button:hover,
-nav button:focus {
-  opacity: 0.8;
-  cursor: pointer;
 }
 
 #menu-bars {
