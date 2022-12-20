@@ -21,7 +21,8 @@
   color-scheme: dark;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-size: 14px;
 }
@@ -241,6 +242,15 @@ nav button:focus {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+
+.swiper-pagination-bullet {
+  background-color: var(--primary-text-color);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
 }
 
 @media (max-width: 1150px) {

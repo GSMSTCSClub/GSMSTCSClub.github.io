@@ -200,11 +200,11 @@ h2::after {
 }
 
 .box .content {
-  flex: 1 1 24rem;
+  flex: 2 1 32rem;
 }
 
 .box .image {
-  flex: 1 1 24rem;
+  flex: 1 1 12rem;
 }
 
 .box .content h3 {
@@ -233,6 +233,13 @@ h2::after {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box.filled,
+.quote.filled {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
 }
 
 #quote .quote-container {
@@ -276,7 +283,8 @@ span.emph {
   filter: grayscale(100%);
 }
 
-.content, .quote blockquote {
+.content,
+.quote blockquote {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0;
