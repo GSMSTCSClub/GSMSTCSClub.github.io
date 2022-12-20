@@ -26,24 +26,27 @@
 </head>
 
 <body>
+  <header class="header">
+    <a href="/" class="logo">
+      <img src="images/logo-transparent.png" data-aos="fade-right" />
+      <span>GSMST CS Club</span>
+    </a>
+    <nav>
+      <a href="about.html" title="About US"><i class="fas fa-info-circle"></i><span class="support-text">About
+          US</span></a>
+      <a href="areas.html" title="Areas"><i class="fas fa-project-diagram"></i><span class="support-text">Areas of
+          Focus</span></a>
+      <a href="https://github.com/GSMSTCSClub" target="_blank" title="Our Github page"><i
+          class="fab fa-github"></i><span class="support-text">Github Page</span></a>
+      <a href="https://discord.gg/FxNRxWCMta" target="_blank" title="Our discord"><i class="fab fa-discord"></i><span
+          class="support-text">Discord Server</span></a>
+      <button><a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf8Ss8ndyiiR9pUxNZ08iiPsRepaQ8Q1KaucPGGoyjdGlxVUQ/viewform"
+          target="_blank" title="Join Us">Join</a></button>
+    </nav>
+    <a href="#" id="menu-bars"><i class="fas fa-bars"></i></a>
+  </header>
   <div class="full-height main-container">
-    <header class="header">
-      <a href="/" class="logo">
-        <img src="images/logo-transparent.png" data-aos="fade-right" />
-        <span>GSMST CS Club</span>
-      </a>
-      <nav>
-        <a href="about.html" title="About US"><i class="fas fa-info-circle"></i></a>
-        <a href="areas.html" title="Areas"><i class="fas fa-project-diagram"></i></a>
-        <a href="https://github.com/GSMSTCSClub" target="_blank" title="Our Github page"><i
-            class="fab fa-github"></i></a>
-        <a href="https://discord.gg/FxNRxWCMta" target="_blank" title="Our discord"><i class="fab fa-discord"></i></a>
-        <button><a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSf8Ss8ndyiiR9pUxNZ08iiPsRepaQ8Q1KaucPGGoyjdGlxVUQ/viewform"
-            target="_blank" title="Join Us">Join</a></button>
-        <a href="#" id="menu-bars"><i class="fas fa-bars"></i></a>
-      </nav>
-    </header>
     <section class="hero">
       <div class="left">
         <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="600">
@@ -133,7 +136,7 @@
       <h2>Competitions</h2>
       <div class="swiper slider">
         <div class="swiper-wrapper wrapper">
-          <section class="swiper-slide slide box">
+          <section class="swiper-slide slide box filled">
             <div class="content">
               <h3>CyberPatriot</h3>
               <p>
@@ -148,7 +151,7 @@
               <img src="images/cyberpatriot.png" alt="Logo of CyberPatriot competition">
             </div>
           </section>
-          <section class="swiper-slide slide box">
+          <section class="swiper-slide slide box filled">
             <div class="content">
               <h3>PicoCTF</h3>
               <p>
@@ -161,7 +164,7 @@
               <img src="images/picoctf.svg" alt="Logo of PicoCTF competition">
             </div>
           </section>
-          <section class="swiper-slide slide box">
+          <section class="swiper-slide slide box filled">
             <div class="content">
               <h3>USACO</h3>
               <p>
@@ -173,7 +176,7 @@
               <img src="images/usaco.png" alt="Logo of USACO competition">
             </div>
           </section>
-          <section class="swiper-slide slide box">
+          <section class="swiper-slide slide box filled">
             <div class="content">
               <h3>CodeQuest</h3>
               <p>
@@ -186,7 +189,7 @@
             </div>
           </section>
           <!-- games for change -->
-          <section class="swiper-slide slide box">
+          <section class="swiper-slide slide box filled">
             <div class="content">
               <h3>Games for Change</h3>
               <p>
@@ -199,6 +202,8 @@
             </div>
         </div>
         <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
     <section id="calender">
