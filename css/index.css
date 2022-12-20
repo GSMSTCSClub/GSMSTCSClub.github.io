@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+  height: calc(100vh - 84px);
 }
 
 .left {
@@ -15,9 +16,11 @@
   0% {
     margin-top: 0;
   }
+
   50% {
     margin-top: -60px;
   }
+
   100% {
     margin-top: 0px;
   }
@@ -30,23 +33,25 @@
 
 .hero-title {
   color: var(--primary-text-color);
-  font-size: 4rem;
+  font-size: 2.8rem;
   padding: 0;
   margin: 0;
 }
 
+.hero-title span {
+  color: var(--accent-color);
+  font-size: 4rem;
+}
+
 .hero-description {
   color: var(--primary-text-color);
-  font-size: 1.5rem;
   font-weight: 600;
   width: 50ch;
 }
 
 .hero-join-button {
   text-decoration: none;
-  background-color: var(--accent-color);
 
-  color: var(--primary-text-color);
   font-size: 1.6rem;
   font-family: var(--ff);
   font-weight: 600;
@@ -55,21 +60,13 @@
   border-radius: 1.875rem;
   flex-grow: 0;
   width: 12rem;
-
-  text-align: center;
-  transition: opacity 0.2s ease;
-}
-
-.hero-join-button:hover,
-.hero-join-button:focus {
-  opacity: 0.7;
 }
 
 .hero-join-link {
   width: 12rem;
 }
 
-@media (max-width: 1150px) { 
+@media (max-width: 1150px) {
   .hero {
     flex-direction: column;
     justify-content: center;
@@ -86,7 +83,7 @@
   }
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 640px) {
   .hero {
     text-align: center;
     align-items: stretch;
@@ -111,7 +108,7 @@
   }
 }
 
-@media (max-width: 290px) { 
+@media (max-width: 290px) {
   .hero-title {
     font-size: 2rem;
   }
@@ -141,4 +138,165 @@
     padding: 0.6rem 0rem;
     width: 10rem;
   }
+}
+
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 1.5555556rem;
+  margin-bottom: 0.8888889rem;
+  line-height: 1.1111111;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  background: linear-gradient(90deg, rgba(8, 156, 204, 1) 0%, rgba(0, 212, 255, 1) 100%);
+  width: 5rem;
+  height: 0.2rem;
+  border-radius: 0.1rem;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 3rem;
+}
+
+#competition .slider {
+  width: 100%;
+  height: 254px;
+}
+
+#competition .slider .slide {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 2rem;
+}
+
+@media (max-width: 480px) {
+  .box-container .box {
+    flex-wrap: wrap;
+  }
+}
+
+.box *:first-child {
+  margin-top: 0 !important;
+}
+
+.box .content {
+  flex: 2 1 28rem;
+}
+
+.box .image {
+  flex: 1 1 12rem;
+}
+
+.box .content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6666667rem;
+  line-height: 1.3333333;
+  color: var(--accent-color);
+}
+
+.box .content p {
+  font-weight: 200;
+  color: var(--primary-text-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+.box .image img {
+  max-width: 100%;
+  max-height: 152px;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box.filled,
+.quote.filled {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+}
+
+#quote .quote-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.quote {
+  border: 1px solid var(--accent-color);
+  color: var(--primary-text-color);
+  padding: 2rem;
+  text-align: center;
+
+  height: 300px;
+  border-radius: 1.5rem;
+  padding: 0;
+
+  flex: 1 1 32rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+span.emph {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.quote img {
+  flex: 0 0 190px;
+  align-self: center;
+  margin-right: 1.5rem;
+  height: 100%;
+  border-radius: 1.5rem;
+  filter: grayscale(100%);
+}
+
+.content,
+.quote blockquote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.quote .content {
+  flex: 1 1 16rem;
+}
+
+.quote .attribute .speaker {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.quote .attribute .title {
+  color: var(--secondary-text-color);
+  font-size: 1rem;
 }
