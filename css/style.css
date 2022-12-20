@@ -64,11 +64,13 @@ canvas {
 /* Header and Navigation */
 header {
   backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  
   display: flex;
   padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
-  
+
   position: absolute;
   top: 0;
   left: 0;
@@ -280,6 +282,9 @@ nav button:focus {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
     backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+
+    background-color: rgba(0, 0, 0, 0.5);
     transition: var(--bezier);
   }
 
