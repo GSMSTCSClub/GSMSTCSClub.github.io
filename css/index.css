@@ -234,3 +234,66 @@ h2::after {
   justify-content: center;
   align-items: center;
 }
+
+#quote .quote-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.quote {
+  border: 1px solid var(--accent-color);
+  color: var(--primary-text-color);
+  padding: 2rem;
+  text-align: center;
+
+  height: 300px;
+  border-radius: 1.5rem;
+  padding: 0;
+
+  flex: 1 1 32rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+span.emph {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.quote img {
+  flex: 0 0 190px;
+  align-self: center;
+  margin-right: 1.5rem;
+  height: 100%;
+  border-radius: 1.5rem;
+  filter: grayscale(100%);
+}
+
+.content, .quote blockquote {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.quote .content {
+  flex: 1 1 16rem;
+}
+
+.quote .attribute .speaker {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+}
+
+.quote .attribute .title {
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+}
