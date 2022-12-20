@@ -4,15 +4,19 @@ AOS.init({
   duration: 1000,
 });
 
-// Handle mobile navbar state
-const toggleBtn = document.querySelector("#menu-bars");
-const navList = document.querySelector("nav > ul");
-const links = document.querySelectorAll("nav > ul > li");
+// Navigation bar
+let nav = document.querySelector("nav");
+let menu = document.querySelector("#menu-bars");
 
-toggleBtn.addEventListener("click", () => {
-  navList.classList.toggle("nav-active");
-  toggleBtn.classList.toggle("nav-toggled");
-});
+menu.onclick = () => {
+  menu.querySelector('i').classList.toggle("fa-times");
+  nav.classList.toggle("active");
+};
+
+window.onscroll = () => {
+  menu.querySelector('i').classList.remove("fa-times");
+  nav.classList.remove("active");
+};
 
 // Initialize vanta animated background
 VANTA.NET({
