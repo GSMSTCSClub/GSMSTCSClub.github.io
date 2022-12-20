@@ -234,7 +234,7 @@ h2::after {
   max-height: 152px;
 }
 
-.calender {
+.calendar {
   display: flex;
   justify-content: center;
   align-items: center;
