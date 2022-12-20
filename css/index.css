@@ -45,7 +45,6 @@
 
 .hero-description {
   color: var(--primary-text-color);
-  font-size: 1.5rem;
   font-weight: 600;
   width: 50ch;
 }
@@ -151,9 +150,13 @@
   }
 }
 
+
 h2 {
-  font-size: 3.5rem;
-  font-weight: bolder;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 1.5555556rem;
+  margin-bottom: 0.8888889rem;
+  line-height: 1.1111111;
 }
 
 h2::after {
@@ -168,40 +171,66 @@ h2::after {
 .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 3rem;
+}
+
+#competition .slider {
+  width: 100%;
+  height: 254px;
 }
 
 .box {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+
+  padding: 2rem;
+}
+
+@media (max-width: 480px) {
+  .box-container .box {
+    flex-wrap: wrap;
+  }
+}
+
+.box *:first-child {
+  margin-top: 0 !important;
 }
 
 .box .content {
-  flex: 1 1 48rem;
-}
-
-.box .content h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--accent-color);
-  margin: 0;
-  margin-bottom: 0.2rem;
-}
-
-.box .content p {
-  font-size: 1.5rem;
-  font-weight: 200;
-  color: #aaa;
-  margin: 0;
+  flex: 1 1 24rem;
 }
 
 .box .image {
-  flex: 1 1 48rem;
+  flex: 1 1 24rem;
 }
+
+.box .content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6666667rem;
+  line-height: 1.3333333;
+  color: var(--accent-color);
+}
+
+.box .content p {
+  font-weight: 200;
+  color: var(--primary-text-color);
+  margin: 0;
+  line-height: 1.5;
+}
+
 
 .box .image img {
   max-width: 100%;
+  max-height: 152px;
+}
+
+.calender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

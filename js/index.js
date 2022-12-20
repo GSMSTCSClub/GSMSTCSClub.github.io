@@ -1,4 +1,4 @@
-let swiper = new Swiper('#competition .swiper-container', {
+let swiper = new Swiper('#competition .swiper', {
     direction: 'horizontal',
     loop: true,
     autoplay: {

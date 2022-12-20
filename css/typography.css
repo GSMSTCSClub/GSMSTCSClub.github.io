@@ -26,8 +26,8 @@ h2 strong {
 
 h3 {
     color: var(--tw-prose-headings);
-    font-weight: 600;
     font-size: 1.5rem;
+    font-weight: 600;
     margin-top: 1.6rem;
     margin-bottom: 0.6666667rem;
     line-height: 1.3333333;
