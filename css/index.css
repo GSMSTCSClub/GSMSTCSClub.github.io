@@ -179,6 +179,11 @@ h2::after {
   height: 254px;
 }
 
+#competition .slider .slide {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .box {
   display: flex;
   flex-direction: row;
