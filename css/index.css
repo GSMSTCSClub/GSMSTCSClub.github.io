@@ -170,7 +170,7 @@ h2::after {
 
 .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-gap: 3rem;
 }
 
