@@ -2,10 +2,17 @@
   height: 100%;
   display: grid;
   place-items: center;
+  font-size: large;
+}
+
+#logos img {
+  margin: auto;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
 }
 
 .placeholder {
-  font-size: 2rem;
   color: white;
 }
 
@@ -14,4 +21,37 @@
     radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
     radial-gradient(at 50% 100%, hsla(225,39%,25%,1) 0, transparent 50%);
   background-repeat: no-repeat;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 10px;
+  display: flex;
+  overflow:hidden;
+  border: 2px solid white;
+  /* object-position: 100%; */
+}
+.box h1{
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;  /* Vertically centers the text */
+  justify-content: center;
+  margin: 0;
+  top: 0; /* Move the top of the h1 to the vertical center */
+  width: 100%;
+  left: 0;
+  height: 100%;
+  color: white;
+}
+.box img{
+  opacity: 25%;
+  /* max-width: 100%;
+  max-height: 100%; */
+  /* height: auto;
+  width: auto; */
 }
