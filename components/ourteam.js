@@ -1,24 +1,24 @@
 profiles = [
-    ["Yubo Cao", "/images/Profiles/placeholder.jpg", "Co-president"],
-    ["Katie Chen", "/images/Profiles/placeholder.jpg", "Co-president"],
-    ["Brian Zhou", "/images/Profiles/placeholder.jpg", "Co-vice president"],
-    ["Minh Ngyuen", "/images/Profiles/placeholder.jpg", "Co-vice President"],
-    ["Vishva Patel", "/images/Profiles/placeholder.jpg", "Chief of Fundraising"],
-    ["Elizabeth Tsiporkin", "/images/Profiles/placeholder.jpg", "Chief of Fundraising"],
-    ["Kevin Jwang Lee", "/images/Profiles/placeholder.jpg", "Competition Head"],
-    ["James Overcash", "/images/Profiles/placeholder.jpg", "Algo Head"],
-    ["Luke Cheng", "/images/Profiles/placeholder.jpg", "Algo Officer"],
-    ["Edmund Fung", "/images/Profiles/placeholder.jpg", "Algo Officer"],
-    ["Max Tung", "/images/Profiles/placeholder.jpg", "Algo Officer"],
-    ["Jase George", "/images/Profiles/placeholder.jpg", "CyberDragons Head"],
-    ["BanAnh Doan", "/images/Profiles/placeholder.jpg", "CyberDrangons Officer"],
-    ["Jackie Lu", "/images/Profiles/placeholder.jpg", "CyberDragons Officer"],
-    ["Achilleas Galanis", "/images/Profiles/placeholder.jpg", "CyberDragons Officer"],
-    ["Nekita Ghimire", "/images/Profiles/placeholder.jpg", "CS 101 Head"],
-    ["Ann Padamadan", "/images/Profiles/placeholder.jpg", "CS 101 Officer"],
-    ["Zoe _MISSING_", "/images/Profiles/placeholder.jpg", "CS 101 Officer"],
-    ["Minju Suh", "/images/Profiles/placeholder.jpg", "CS 101 Officer"],
-    ["Ishaan Patel", "/images/Profiles/placeholder.jpg", "CS 101 Officer"],
+    ["Yubo Cao", "Yubo.jpg", "Co-president"],
+    ["Katie Chen", "placeholder.jpg", "Co-president"],
+    ["Minh Ngyuen", "Minh.jpg", "Co-vice President"],
+    ["Brian Zhou", "placeholder.jpg", "Co-vice president"],
+    ["Vishva Patel", "Vishva.jpg", "Chief of Fundraising"],
+    ["Elizabeth Tsiporkin", "Elizabeth.jpg", "Chief of Fundraising"],
+    ["Kevin Juwang Lee", "placeholder.jpg", "Competition Head"],
+    ["James Overcash", "placeholder.jpg", "Algo Head"],
+    ["Luke Cheng", "placeholder.jpg", "Algo Officer"],
+    ["Edmund Fung", "Edmund.jpg", "Algo Officer"],
+    ["Max Tung", "placeholder.jpg", "Algo Officer"],
+    ["Jase George", "placeholder.jpg", "CyberDragons Head"],
+    ["BanAnh Doan", "placeholder.jpg", "CyberDrangons Officer"],
+    ["Jackie Lu", "Jackie.jpg", "CyberDragons Officer"],
+    ["Achilleas Galanis", "Achilleas.jpg", "CyberDragons Officer"],
+    ["Nekita Ghimire", "placeholder.jpg", "CS 101 Head"],
+    ["Zoe Lee", "placeholder.jpg", "CS 101 Officer"],
+    ["Ann Padamadan", "placeholder.jpg", "CS 101 Officer"],
+    ["Ishaan Patel", "placeholder.jpg", "CS 101 Officer"],
+    ["Minju Suh", "placeholder.jpg", "CS 101 Officer"],
 ]
 
 const name_i = 0;
@@ -33,7 +33,7 @@ profiles.forEach(element => {
     name.textContent = element[name_i];
 
     const img = document.createElement("img");
-    img.setAttribute("src", element[src_i]);
+    img.setAttribute("src", "/images/Profiles/" + element[src_i]);
 
     const pos = document.createElement("p");
     pos.textContent = element[position_i];
