@@ -2,10 +2,10 @@
   height: 100%;
   display: grid;
   place-items: center;
+  font-size: large;
 }
 
 .placeholder {
-  font-size: 2rem;
   color: white;
 }
 
