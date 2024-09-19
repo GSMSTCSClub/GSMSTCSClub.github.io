@@ -1,7 +1,7 @@
 profiles = [
     ["Yubo Cao", "Yubo.jpg", "Co-president"],
     ["Katie Chen", "placeholder.jpg", "Co-president"],
-    ["Minh Ngyuen", "Minh.jpg", "Co-vice President"],
+    ["Minh Nguyen", "Minh.jpg", "Co-vice President"],
     ["Brian Zhou", "placeholder.jpg", "Co-vice president"],
     ["Vishva Patel", "Vishva.jpg", "Chief of Fundraising"],
     ["Elizabeth Tsiporkin", "Elizabeth.jpg", "Chief of Fundraising"],
@@ -9,7 +9,7 @@ profiles = [
     ["James Overcash", "placeholder.jpg", "Algo Head"],
     ["Luke Cheng", "placeholder.jpg", "Algo Officer"],
     ["Edmund Fung", "Edmund.jpg", "Algo Officer"],
-    ["Max Tung", "placeholder.jpg", "Algo Officer"],
+    ["Max Lee", "placeholder.jpg", "Algo Officer"],
     ["Jase George", "placeholder.jpg", "CyberDragons Head"],
     ["BanAnh Doan", "placeholder.jpg", "CyberDrangons Officer"],
     ["Jackie Lu", "Jackie.jpg", "CyberDragons Officer"],
