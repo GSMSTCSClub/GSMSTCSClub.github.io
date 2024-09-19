@@ -32,3 +32,17 @@
     border-radius: 5%;
     margin: 10px auto;
   }
+
+img {
+    transition:transform 0.25s ease;
+}
+
+img:focus {
+    /* -webkit-transform:scale(1.5); or some other value */
+    transform: scale(1.5) translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+
+}
