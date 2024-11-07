@@ -1,106 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i2i Amherst Venture Accelerator</title>
   <!-- Favicon -->
   <link rel="icon" href="images/logo-transparent.png">
-
-  <!-- AOS CSS-->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <!-- Global styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css">
   <!-- Index styles -->
   <link rel="stylesheet" href="css/index.css">
-
-  <title>GSMST CS Club</title>
-
 </head>
-
 <body>
-  <div class="full-height main-container">
-    <header class="header">
-      <a href="/" class="logo">
-        <img class="logo-img" src="images/logo-transparent.png" data-aos="fade-right" />
-        <div class="logo-text" data-aos="fade-right" data-aos-delay="200">GSMST CS Club</div>
-      </a>
-      <nav>
-        <ul>
-          <li data-aos="fade-left" data-aos-delay="300"><a href="about.html" class="nav-link line-hover">About</a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="400"><a href="areas.html" class="nav-link line-hover">Areas</a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="400"><a href="gallery.html" class="nav-link line-hover">Gallery</a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="300">
-            <a href="https://github.com/GSMSTCSClub" target="_blank" class="nav-link line-hover">
-              <img src="images/github.svg" class="github-icon" />
-            </a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="300">
-            <a href="https://discord.gg/FxNRxWCMta" target="_blank" class="nav-link line-hover">
-              <img src="images/discord.svg" class="github-icon" />
-            </a>
-          </li>
-          <li data-aos="fade-left" data-aos-delay="600">
-            <a href="https://forms.gle/v4dmYh9EEitL5qJH8"
-              target="_blank" class="nav-link">
-              <button class="nav-join-button">Join</button>
-            </a>
-          </li>
-        </ul>
-        <div class="toggle-btn" data-aos="fade-left" data-aos-delay="400">
-          <div class="line-one"></div>
-          <div class="line-two"></div>
-          <div class="line-three"></div>
-        </div>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="left">
-        <h1 class="hero-title" data-aos="zoom-in" data-aos-delay="600">GSMST<br \>Computer Science Club</h1>
-        <p class="hero-description" data-aos="fade-down" data-aos-delay="800">
-          Welcome to the website of the CS Club of
-          the #1 High School in Georgia. Created and
-          maintained by GSMST students.</p>
-        <div class="join-button-container">
-          <a target="_blank"
-            href="https://forms.gle/v4dmYh9EEitL5qJH8"
-            class="hero-join-link" data-aos="fade-up" data-aos-delay="1000">
-            <button class="hero-join-button">Fill Our Interest Form Now!</button>
-          </a>
-        </div>
+
+  <header class="header">
+    <a href="/" class="logo">
+      <img class="logo-img" src="images/logo-transparent.png" alt="i2i Logo">
+      <div class="logo-text">i2i<br>Ideas to Innovation</div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#our-team" class="nav-link line-hover">Our Team</a></li>
+        <li><a href="#startups" class="nav-link line-hover">Startups</a></li>
+        <li><a href="#events" class="nav-link line-hover">Events</a></li>
+        <li><a href="#contact" class="nav-link line-hover">Get in Touch</a></li>
+      </ul>
+      <div class="toggle-btn">
+        <div class="line-one"></div>
+        <div class="line-two"></div>
+        <div class="line-three"></div>
       </div>
-      <div class="right" data-aos="fade-left" data-aos-delay="1200">
-        <a href="areas.html">
-          <img src="images/panel.png" width="400px" class="panel-img" id="panel-img" />
-        </a>
+    </nav>
+  </header>
+
+  <main id="vanta-bg" class="main-content">
+    <section class="hero">
+      <div class="left" data-aos="fade-right">
+        <h1 class="hero-title">We are i2i, Amherst’s student-led venture accelerator</h1>
+        <p class="hero-description">
+          We help launch and scale student ideas. Our mission is to apply Amherst’s rigorous academic learnings to generate solutions for real-world problems.
+        </p>
+        <p class="hero-link">
+          Follow us on <a href="https://instagram.com/i2i.amherst" target="_blank">Instagram</a> and join our <a href="#newsletter">newsletter</a> for updates.
+        </p>
+      </div>
+      <div class="right">
+        <img src="images/i2i-logo.png" class="panel-img" alt="i2i logo" />
       </div>
     </section>
-  </div>
-  <div id="vanta-target"></div>
 
-  <!-- Test scrolling -->
-  <!-- <div style="height: 1000px; font-size: 50px;">hello</div> -->
+    <section id="info-sections" class="info-sections" data-aos="fade-up">
+      <div class="card" id="startups">
+        <h2>Startups</h2>
+        <p>Shower thought or grand plan, i2i delivers resources, people, and advice to motivated founders.</p>
+        <a href="#learn-more">Learn more →</a>
+      </div>
+      <div class="card" id="our-team">
+        <h2>Our Team</h2>
+        <p>i2i offers real-world project and work experience to students looking for an exciting community.</p>
+        <a href="#learn-more">Learn more →</a>
+      </div>
+    </section>
+  </main>
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
   <!-- Vanta JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-
-  <!-- Vanilla Tilt JS -->
-  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
-
-  <!-- My JS -->
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/initAOS.js"></script>
-
+  <!-- Custom JS -->
+  <script src="js/app.js"></script>
+  <script src="js/initAOS.js"></script>
+  <script>
+    // Initialize Vanta.js background on the main content area
+    VANTA.NET({
+      el: "#vanta-bg",
+      color: 0xff5722,
+      backgroundColor: 0xfafafa,
+      points: 10.00,
+      maxDistance: 20.00,
+      spacing: 15.00
+    });
+  </script>
 </body>
-
 </html>

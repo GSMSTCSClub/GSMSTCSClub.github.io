@@ -1,231 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&family=Open+Sans:wght@300;400;500;700&display=swap');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --primary-text-color: white;
-  --accent-color: #089ccc;
-  --bg-color: #23153c;
-  --ff: "Inter";
-  font-size: 0.75rem;
-  color-scheme: dark;
-}
-
-html {
-  overflow-x: hidden;
-}
-
 body {
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   margin: 0;
-  padding: 0;
-  background-color: var(--bg-color);
-  font-family: var(--ff);
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
-/* Vanta (animated background) */
-canvas {
-  position: fixed !important;
+h1, h2 {
+  color: var(--primary-color);
 }
 
-#vanta-target {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-
-button {
-  border: none;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.25rem;
-  color: var(--primary-text-color);
+a {
+  color: var(--accent-color);
   text-decoration: none;
 }
 
-.logo-img {
-  max-width: 100px;
+.nav-link:hover, .nav-link:focus, .card a:hover {
+  opacity: 0.7;
 }
 
-.logo-text {
-  margin-left: 1rem;
-  font-size: 2.15rem;
-  font-weight: 600;
-}
-
-nav > ul {
+.info-sections {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  align-items: center;
-  gap: 4vw;
+  gap: 20px;
+  justify-content: center;
+  padding: 2rem;
 }
 
-nav > ul > li {
-  position: relative;
-}
-
-.nav-link {
-  color: var(--primary-text-color);
-  text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.github-icon {
-  filter: invert(61%) sepia(67%) saturate(6168%) hue-rotate(166deg) brightness(97%) contrast(94%);
-}
-
-.discord-icon {
-  filter: invert(61%) sepia(67%) saturate(6168%) hue-rotate(166deg) brightness(97%) contrast(94%);
-}
-
-.line-hover::after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: -8px;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: var(--accent-color);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-
-.line-hover:hover::after,
-.line-hover:focus::after {
-  width: 100%;
-  left: 0;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 15vh;
-}
-
-.nav-join-button {
-  background-color: var(--accent-color);
-  font-size: 1.6rem;
-  padding: 0.9rem 2.2rem;
-  border-radius: 1.875rem;
-  color: var(--primary-text-color);
-  font-family: var(--ff);
-  font-weight: 600;
-  transition: opacity 0.2s ease;
-}
-
-.nav-join-button:hover,
-.nav-join-button:focus {
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-
-.full-height {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Mobile Navigation Toggle Button */
-.toggle-btn div {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-.toggle-btn {
-  display: none;
-}
-
-.nav-active {
-  transform: translateX(0%);
-}
-
-.nav-active > li {
-  opacity: 1;
-}
-
-.nav-toggled .line-one {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.nav-toggled .line-two {
-  opacity: 0;
-}
-
-.nav-toggled .line-three{
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-@media (max-width: 1150px) { 
-  nav > ul {
-    position: absolute;
-    right: 0;
-    height: 85vh;
-    top: 15vh;
-    background: hsl(0 0% 100% / 0.1);
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
-    display: flex;
+@media (max-width: 768px) {
+  .hero {
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    width: 100%;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in;
-    z-index: 1;
+    text-align: center;
   }
 
-  nav > ul > li {
-    opacity: 0;
+  .panel-img {
+    margin-top: 2rem;
   }
 
-  .nav-link {
-    font-size: 2rem;
+  .info-sections {
+    flex-direction: column;
+    align-items: center;
   }
+}
 
-  .nav-join-button {
-    display: none;
+@media (max-width: 640px) {
+  .header, .footer {
+    flex-direction: column;
+    text-align: center;
   }
 
   .toggle-btn {
     display: block;
     cursor: pointer;
   }
-}
 
-@media (max-width: 640px) { 
-  .main-container {
-    padding: 0 20px;
-  }
-
-  .logo-text {
+  nav ul {
     display: none;
   }
+}
 
+.footer ul {
+  display: flex;
+  gap: 10px;
 }
