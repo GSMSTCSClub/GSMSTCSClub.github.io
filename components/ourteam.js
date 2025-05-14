@@ -11,7 +11,7 @@ profiles = [
     ["Ann Padamadan", "placeholder.jpg", "CyberDragons Head"],
     ["Tara Wang", "placeholder.jpg", "CyberDrangons Officer"],
     ["Jason Lu", "placeholder.jpg", "CyberDragons Officer"],
-    ["Stephen Akrong", "placeholder.jpg", "CS 101 Head"],
+    ["Stephen Akrong", "Stephen.jpg", "CS 101 Head"],
     ["Geonhee Shin", "placeholder.jpg", "CS 101 Officer"],
     ["AnAn Liu", "placeholder.jpg", "CS 101 Officer"],
     ["Ishaan Sanjesh", "placeholder.jpg", "CS 101 Officer"],
