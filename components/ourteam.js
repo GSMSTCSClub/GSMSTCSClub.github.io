@@ -1,5 +1,5 @@
 profiles = [
-    ["Elizabeth Tsiporkin", "Elizabeth.jpg", "Co-President"],
+    ["Elizabeth Tsiporkin", "ElizabethT.png", "Co-President"],
     ["Jacqueline Lu", "Jackie.png", "Co-President"],
     ["Minju Suh", "placeholder.jpg", "Co-Vice President"],
     ["Luke Cheng", "placeholder.jpg", "Co-Vice President"],
