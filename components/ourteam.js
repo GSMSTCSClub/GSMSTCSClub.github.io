@@ -9,7 +9,7 @@ profiles = [
     ["Alexander Lu", "placeholder.jpg", "Algo Officer"],
     ["Evan Yang", "EvanY.jpg", "Algo Officer"],
     ["Ann Padamadan", "Ann.jpg", "CyberDragons Head"],
-    ["Tara Wang", "placeholder.jpg", "CyberDrangons Officer"],
+    ["Tara Wang", "placeholder.jpg", "CyberDragons Officer"],
     ["Jason Lu", "Jason.jpg", "CyberDragons Officer"],
     ["Stephen Akrong", "Stephen.jpg", "CS 101 Head"],
     ["Geonhee Shin", "placeholder.jpg", "CS 101 Officer"],
