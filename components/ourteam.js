@@ -1,4 +1,4 @@
-anprofiles = [
+profiles = [
     ["Elizabeth Tsiporkin", "ElizabethT.png", "Co-President"],
     ["Jacqueline Lu", "Jackie.jpg", "Co-President"],
     ["Minju Suh", "placeholder.jpg", "Co-Vice President"],
@@ -16,7 +16,7 @@ anprofiles = [
     ["AnAn Liu", "AnAn.jpg", "CS 101 Officer"],
     ["Ishaan Sanjesh", "Ishaan.jpg", "CS 101 Officer"],
     ["Edwards Nguyen", "Edwards.jpg", "CS 101 Officer"],
-    ["Emanuel Million", "placeholder.jpg", "CS 101 Officer"],
+    ["Emanuel Million", "Emanuel.jpg", "CS 101 Officer"],
 ]
 
 const name_i = 0;
